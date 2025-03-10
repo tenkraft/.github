@@ -1,31 +1,31 @@
 # Tenkraft
 
-## Infrastructure et Stack Technique
+## Infrastructure and Technical Stack
 
 ### Backend & Cloud  
-- API REST en microservices avec Node.js (Express.js) et Knex.js (MySQL).  
-- Authentification OIDC avec gestion des permissions.  
-- Websockets & MQTT pour communication en temps réel.  
-- Déploiement sur Kubernetes (K8s) avec autoscaling et load balancing.  
-- CI/CD via GitHub Actions avec déploiement automatisé sur cluster K8s.
+- REST API in microservices architecture using Node.js (Express.js) and Knex.js (MySQL).  
+- OIDC authentication with permission management.  
+- WebSockets & MQTT for real-time communication.  
+- Deployment on Kubernetes (K8s) with autoscaling and load balancing.  
+- CI/CD with GitHub Actions, enabling automated deployment to the K8s cluster.
 
-### Communication IoT  
-- Stack LoRa avec mécanisme de chiffrement basé sur HMAC et génération de clés dynamiques pour sécuriser les échanges.
-- Optimisation protocolaire pour latence réduite et faible consommation énergétique.  
-- Bridge MQTT entre Raspberry Pi et cloud pour communication bidirectionnelle.  
-- Watchdog local assurant un fallback en cas de perte réseau.
+### IoT Communication  
+- LoRa stack with HMAC-based encryption and dynamic key generation for secure data exchange.  
+- Protocol optimization for reduced latency and low power consumption.  
+- MQTT bridge between Raspberry Pi and cloud for bidirectional communication.  
+- Local watchdog ensuring fallback in case of network loss.
 
 ### Edge Computing  
-- Fleet de Raspberry Pi 3B sous Linux customisé, exécutant des workloads distribués.  
-- Scripts Python optimisés pour contrainte CPU/RAM minimale.  
-- Automatisation des mises à jour via GitHub + obfuscation PyArmor.  
-- Logs centralisés et monitoring en temps réel via pipeline dédié.
+- Fleet of Raspberry Pi 3B running a custom Linux, executing distributed workloads.  
+- Python scripts optimized for minimal CPU/RAM constraints.  
+- Automated updates via GitHub + PyArmor obfuscation.  
+- Centralized logging and real-time monitoring through a dedicated pipeline.
 
-### DevOps et Orchestration  
-- Orchestration des services via Kubernetes avec gestion des volumes persistants et scaling dynamique.  
-- CI/CD entièrement automatisé avec GitHub Actions, incluant tests et validation avant déploiement.  
-- Déploiement sur cluster cloud avec rollback automatique en cas d’échec.  
-- Aucun accès direct aux bases de données en production, tout passe par des API sécurisées.
+### DevOps and Orchestration  
+- Service orchestration via Kubernetes with persistent volume management and dynamic scaling.  
+- Fully automated CI/CD with GitHub Actions, including tests and validation before deployment.  
+- Deployment on cloud cluster with automatic rollback in case of failure.  
+- No direct access to production databases; all interactions go through secure APIs.
 
 ## Contact  
 - support@tenkraft.com  
